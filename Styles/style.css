@@ -193,7 +193,7 @@ body {
 }
 .popular__wrapper {
   background: var(--accents-color);
-  background: url(../assets/images/Rectangle\ 2.png) no-repeat center;
+  background-image: url(../assets/images/Rectangle\ 2.png) no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: space-around;
@@ -201,9 +201,37 @@ body {
   height: 387px;
   border-radius: 64px;
 }
-.popular__card-wrapper{
+.popular__card-wrapper {
   transform: translateY(-80px);
 }
+/* ! End Popular Section */
+/* * Start Delivery Section */
+.delivery__Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__delivery {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.card__delivery-img {
+  max-width: 160px;
+}
+.card__delivery-title {
+  letter-spacing: 4%;
+}
+.card__delivery-description {
+  letter-spacing: 4%;
+  color: rgba(47, 33, 5, 1);
+}
+/* ! End Delivery Section */
+/* * Start About Us Section */
+
 /* ! Responsive */
 @media screen and (max-width: 576px) {
   .container {
