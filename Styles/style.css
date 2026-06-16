@@ -293,11 +293,90 @@ body {
   max-width: 162px;
   font-size: 14px;
 }
-.card-wrapper {
-}
 .special__card {
   box-shadow: var(--box-shadow-secondary);
 }
+/* ! End Special Menu Section */
+/* * Start About Team Section */
+.about-team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 485px;
+  position: relative;
+}
+.about-team::after {
+  content: "";
+  position: absolute;
+  background: var(--bg-color-color);
+  border-radius: 0 var(--border-radius-bg);
+  overflow: hidden;
+  width: 70%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.about-team::before {
+  content: "";
+  position: absolute;
+  background: url(../assets/images/Exclude.png);
+  background-size: cover;
+  opacity: 0.1;
+  border-radius: 0 var(--border-radius-about);
+  width: 70%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.abot-team__description {
+  padding-left: 300px;
+  z-index: 2;
+}
+.about-team__text {
+  max-width: 352px;
+}
+.about-team__people-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  z-index: 2;
+  padding-right: 100px;
+}
+.people__card {
+  max-width: 200px;
+  height: 280px;
+  border: 6px solid var(--accents-color);
+  position: relative;
+}
+.people__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.people__card-description-wrapper {
+  width: 200px;
+  height: 120px;
+  padding: 12px;
+  background: rgba(255, 203, 124, 1);
+  border-radius: var(--border-radius-about);
+  border: 6px solid var(--accents-color);
+  position: absolute;
+  bottom: 20px;
+  right: -80px;
+}
+.people__card-name {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+.people__card-name-des {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+/* ! End About Team Section */
+/* * Start Footer */
 
 /* ! Responsive */
 @media screen and (max-width: 576px) {
