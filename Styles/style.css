@@ -275,7 +275,7 @@ body {
 .about__title {
   max-width: 350px;
 }
-.about__text{
+.about__text {
   max-width: 480px;
 }
 .about-us__description .btn--primary {
@@ -283,6 +283,22 @@ body {
 }
 /* ! End About Us Section */
 /* * Start Special Menu Section */
+.special-menu__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.specile__card-text {
+  max-width: 162px;
+  font-size: 14px;
+}
+.card-wrapper {
+}
+.special__card {
+  box-shadow: var(--box-shadow-secondary);
+}
+
 /* ! Responsive */
 @media screen and (max-width: 576px) {
   .container {
