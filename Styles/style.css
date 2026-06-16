@@ -377,6 +377,58 @@ body {
 }
 /* ! End About Team Section */
 /* * Start Footer */
+.footer-bg {
+  height: 395px;
+  position: relative;
+  background: url(../assets/images/footer.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: var(--border-radius-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.footer-bg::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  opacity: 0.2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: var(--border-radius-bg);
+}
+.footer__title {
+  color: #fff;
+  z-index: 2;
+}
+.footer__form {
+  z-index: 2;
+}
+.footer__input {
+  width: 486px;
+  height: 55px;
+  border-radius: var(--border-radius-badge);
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  padding-right: 100px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 4%;
+}
+.footer__input::placeholder {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 4%;
+  color: var(--light);
+}
+.footer__btn {
+  transform: translate(350px, -48px);
+}
 
 /* ! Responsive */
 @media screen and (max-width: 576px) {
